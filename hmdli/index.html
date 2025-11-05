@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style>
-        .animation{
+        .animation {
             transition: all 0.4s ease-in-out;
-            
+
         }
     </style>
     <title>Document</title>
@@ -17,7 +18,7 @@
 
 <body class="flex justify-center items-center  w-full ">
 
-<!-- <div class="relative overflow-hidden group flex items-center justify-between px-7 w-[380px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+    <!-- <div class="relative overflow-hidden group flex items-center justify-between px-7 w-[380px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
         <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white" src="img/assents/icons/Vector.svg" alt="">
 
         <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Digitale strategy</h3>
@@ -34,33 +35,68 @@
     </div>
     </div> -->
 
-    <section class="w-[1440px] flex justify-center items-center">
-        <div class="w-full h-[1112px]">
-            <div class="bg-[url(./img/assents/icons/Section.png)] size-full flex flex-col justify-center items-center">
+    <section class="sm:w-[1440px] w-[390px] flex flex-col items-center">
+        <div class="sm:w-full sm:h-[1160px]">
+            <div class="bg-[url(./img/assents/icons/Section.png)] size-full flex flex-col justify-center items-start sm:items-center sm:px-0  px-[15px]">
 
-                <nav class="w-full flex justify-between items-center text-white py-5  px-[152px]">
+                <nav class="w-full sm:mt-0 mt-[80px]   flex justify-between items-center text-white sm:py-5  py-[34px] sm:px-[152px]">
                     <h1 class="font-bold text-[36px]">Gentium.</h1>
 
-                    <div class="flex gap-[43px]">
-                        <a href="#">Home</a>
-                        <a href="#">Services</a>
-                        <a href="#">Works</a>
-                        <a href="#">About</a>
-                        <a href="#">Client</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
+                    <div class="hidden sm:flex flex gap-[43px]">
+                        <a class="relative group " href="#">
+                            <span
+                                class="absolute -bottom-1 left-0 bg-[#E9204F] w-3 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                            Home
+                        </a>
+                        <a class="relative group " href="#">
+                            <span
+                                class="absolute -bottom-1 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full"></span>Services
+                        </a>
+                        <a class="relative group" href="#"><span
+                                class="absolute -bottom-1 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full"></span>Works
+
+                        </a>
+                        <a class="relative group" href="#"><span
+                                class="absolute -bottom-1 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full"></span>About
+
+                        </a>
+                        <a class="relative group" href="#"><span
+                                class="absolute -bottom-1 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full"></span>Client
+
+                        </a>
+                        <a class="relative group" href="#"><span
+                                class="absolute -bottom-1 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full"></span>Blog
+
+                        </a>
+                        <a class="relative group" href="#"><span
+                                class="absolute -bottom-1 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full"></span>Contact
+
+                        </a>
                     </div>
-                </nav>  
 
-                <div class="w-[1200px] py-[140px]">
-                    <h1 class="text-[78px] text-white">We're a digital <br>
-                    agency.</h1>
+                    <div class="sm:hidden  items-center  flex-col gap-8">
+                        <div class="h-1 w-8 bg-white"></div>
+                        <div class="h-1 w-8 bg-white my-[6px]"></div>
+                        <div class="h-1 w-8 bg-white"></div>
+                    </div>
+                </nav>
 
-                    <button class="text-white w-[190px] h-[60px] border-[1px] border-[#E9204F] flex justify-center items-center mt-[61px]">Getting Started</button>
+                <div class="sm:w-[1200px] sm:py-[140px] ">
+                    <h1 class="text-[40px] sm:text-[78px] text-white">We're a digital <br>
+                        agency.</h1>
+
+                    <button
+                        class="group relative text-white w-[190px] h-[60px] border-[1px] border-[#E9204F] flex justify-center items-center sm:mb-0 mb-[70px] mt-[61px]">
+                        <span
+                            class="absolute left-0 top-0 w-0 h-full bg-[#E9204F] transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <h1 class="relative z-10">Getting
+                            Started</h1>
+                    </button>
                 </div>
 
-                <div class="w-[1230px] flex gap-[30px]">
-                    <div class="w-[380px]  text-white flex-col items-center justify-center bg-[#E9204F] pb-[78px] pt-[60px] px-[40px]">
+                <div class="sm:w-[1230px] flex sm:flex-row flex-col  sm:gap-[30px] gap-[20px]">
+                    <div
+                        class=" sm:w-[380px] w-[350px]  text-white flex-col items-center justify-center bg-[#E9204F] pb-[78px] pt-[60px] px-[40px]">
                         <img class="brightness-[5] mb-[68px]" src="img/assents/icons/list.png" alt="">
 
                         <h1 class="font-bold mb-[34px]">Future Vision</h1>
@@ -71,36 +107,501 @@
                             content of a page.
                         </p>
                     </div>
-<!-- buglu -->
-                    <div class="w-[380px]  text-white flex-col items-center justify-center bg-[#1B1B1B] pb-[78px] pt-[60px] px-[40px]  hover:bg-[#E9204F] group-hover:brightness-[5]">
-                        <img class="group-hover:brightness-[5] mb-[68px] " src="img/assents/icons/bost.png" alt="">
+                    <!-- buglu -->
+                    <div
+                        class="group relative overflow-hidden sm:w-[380px] w-[350px] flex text-white flex-col items-start justify-center bg-[#1B1B1B] pb-[78px] pt-[60px] px-[40px] ">
+                        <span
+                            class="absolute left-0 top-0 h-full w-0 bg-[#E9204F] transition-all duration-500 ease-in-out group-hover:w-full"></span>
 
-                        <h1 class="font-bold mb-[34px]">Product Design.</h1>
 
-                        <p class="">
+                        <img class="relative z-10 brightness-[5] group-hover:brightness-[5] mb-[68px] "
+                            src="img/assents/icons/bost.png" alt="">
+
+                        <h1 class="relative z-10 font-bold mb-[34px]">Product Design.</h1>
+
+                        <p class="relative z-10">
                             There are many variations of passages
                             of available, but the majority alteration
                             in some form.
                         </p>
                     </div>
 
-                    <div class="w-[380px]  text-white flex-col items-center justify-center bg-[#1B1B1B] pb-[78px] pt-[60px] px-[40px]">
-                        <img class="brightness-[5] mb-[68px]" src="img/assents/icons/round.png" alt="">
+                    <div
+                        class="group relative overflow-hidden sm:w-[380px] w-[350px]  text-white flex flex-col items-start justify-center bg-[#1B1B1B] pb-[78px] pt-[60px] px-[40px] z-10 sm:mb-0 mb-[20px]">
+                        <img class="relative z-10 brightness-[5] mb-[68px]" src="img/assents/icons/round.png" alt="">
+                        <span
+                            class="absolute left-0 top-0 h-full w-0 transition-all duration-500 ease-in-out group-hover:w-full bg-[#E9204F] "></span>
 
-                        <h1 class="font-bold mb-[34px]">Inovative Solutions.</h1>
+                        <h1 class="relative z-10 font-bold mb-[34px]">Inovative Solutions.</h1>
 
-                        <p class="">
+                        <p class="relative z-10">
                             The generated Lorem Ipsum is therefore
                             always free from repetition, injected
                             humour.
                         </p>
+
+                        
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="w-full flex flex-col justify-center sm:items-center sm:px-0  px-[15px]">
+            <div class="w-full flex justify-center items-center">
+                <span class="w-[1px] h-[60px] bg-[#E9204F] mb-[110px]"></span>
+            </div>
+
+            <div class="sm:w-[1200px] flex justify-start  flex-col">
+                <span class="w-[60px] h-[1px] bg-[#E9204F] mb-[42px]"></span>
+                <h1 class="mb-[25px] font-bold text-[48px]">Services.</h1>
+                <p class="text-[#E9204F] font-bold mb-[60px]">We work with you, Not for you</p>
+            </div>
+
+            <div class="grid sm:grid-cols-3 grid-cols-1 gap-[30PX]  ">
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/assents/icons/Vector.svg" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Digitale
+                        strategy</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 hover:pl-14 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/table.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">UX Design
+                    </h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 hover:pl-12 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/grapic.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Product
+                        Design</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 hover:pl-10 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/Liste.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Content
+                        Strategy</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/pen.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Design &
+                        Concept</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7  hover:pl-14 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/comment.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Social
+                        Media</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 hover:pl-16 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/Goal.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Media
+                        Planing</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/lightBulb.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">Brand
+                        Identity</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+
+                <div
+                    class="relative overflow-hidden group flex items-center justify-between px-7 sm:w-[380px] w-[360px] h-[105px]  bg-zinc-300  hover:bg-[#E9204F] hover:text-white .animation font-bold">
+                    <img class="group-hover:brightness-[5] absolute left-0 scale-0 group-hover:scale-125 transition duration-200 ease-in-out group-hover:scale-125 .animation hover:text-white"
+                        src="img/Textt.png" alt="">
+
+                    <h3 class="group-hover:translate-x-7 transition duration-200 ease-in-out hover:text-white">SEO
+                        Optimization</h3>
+
+                    <img class="group-hover:brightness-[5] group-hover:translate-x-1 hover:text-white"
+                        src="img/assents/icons/Icon.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-full flex flex-col justify-center sm:items-center ">
+            <div class="w-full flex justify-center items-center">
+                <span class="w-[1px] h-[60px] bg-[#E9204F] mb-[110px]"></span>
+            </div>
+
+            <div class="sm:w-[1200px] flex sm:justify-between sm:flex-row flex-col px-[15px]">
+                <div class="flex justify-center items-start flex-col">
+                    <span class="w-[60px] h-[1px] bg-[#E9204F] mb-[30px] sm:mb-[42px]"></span>
+                <h1 class="mb-[25px] font-bold text-[48px]">Works.</h1>
+                <p class="text-[#E9204F] font-bold sm:mb-[60px]">THINGS WE'VE MADE</p>
+                </div>
+
+                <button
+                        class="group relative text-white w-[190px] h-[60px] border-[1px] border-[#E9204F] flex justify-center items-center mt-[61px] sm:mb-0 mb-[60px]">
+                        <span
+                            class="absolute left-0 top-0 w-0 h-full bg-[#E9204F] transition-all duration-500 ease-in-out group-hover:w-full  group-hover:text-white"></span>
+                        <h1 class="relative z-10 text-black font-bold">View All</h1>
+                </button>
+            </div>
+
+            <div class="flex sm:flex-row  gap-[10px] overflow-x-scroll">
+                <div>
+                    <div class="size-[475px] overflow-hidden ">
+                        <div
+                            class="grayscale hover:grayscale-0 relative hover:scale-125 bg-[url(./img/Shoose.png)] size-full">
+                            <div
+                                class="pr-6  translate-x-4 hover:translate-x-3 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-200 ease-in-out absolute z-10 w-full h-full bg-black/60">
+                                <h3 class="text-white font-bold text-lg">Product Design</h3>
+                                <h4 class="text-white font-bold text-lg">Design/Marketing</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="size-[475px] overflow-hidden ">
+                        <div
+                            class="grayscale hover:grayscale-0 relative hover:scale-125 bg-[url(./img/assents/icons/Article.png)] size-full">
+                            <div
+                                class="pr-6  translate-x-4 hover:translate-x-3 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-200 ease-in-out absolute z-10 w-full h-full bg-black/60">
+                                <h3 class="text-white font-bold text-lg">Woody</h3>
+                                <h4 class="text-white font-bold text-lg">Architecture/Concept</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="size-[475px] overflow-hidden ">
+                        <div
+                            class="grayscale hover:grayscale-0 relative hover:scale-125 bg-[url(./img/House.png)] size-full">
+                            <div
+                                class="pr-6  translate-x-4 hover:translate-x-3 flex flex-col justify-center items-center opacity-0 hover:opacity-100 transition duration-200 ease-in-out absolute z-10 w-full h-full bg-black/60">
+                                <h3 class="text-white font-bold text-lg">Interior Design</h3>
+                                <h4 class="text-white font-bold text-lg">Architecture/design</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-[16px] mt-[44px] mb-[63px] justify-center ">
+                <div class="size-[14px] bg-[#E9204F] rounded-full">
+                </div>
+                <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                <div class="size-[14px] rounded-full border border-zinc-300"></div>
+            </div>
+
+            <div class="w-full flex flex-col justify-center sm:items-center px-[15px]">
+
+                <div class="w-full flex justify-center items-center">
+                    <span class="w-[1px] h-[60px] bg-[#E9204F] mb-[110px]"></span>
+                </div>
+
+                <div class="sm:w-[1200px] flex sm:flex-row flex-col justify-between sm:items-center mb-[60px] ">
+                    <div class="flex flex-col">
+                        <span class="w-[60px] h-[1px] bg-[#E9204F] mb-[42px]"></span>
+                        <h1 class="mb-[25px] font-bold text-[48px]">About.</h1>
+                        <p class="text-[#E9204F] font-bold mb-[60px]">WE'RE MORE THAN A DIGITAL AGENCY</p>
+                    </div>
+                    <div class="font-medium">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore corrupti temporibus fuga <br>
+                        earum asperiores, alias excepturi sit. Impedit, fugit laudantium.
+                    </div>
+                </div>
+
+                <div class="flex sm:flex-row flex-col sm:mb-[70px]">
+                    <div
+                        class="grayscale hover:grayscale-0 relative sm:w-[769px] sm:h-[599px] w-[350px] h-[413px] bg-[url(./img/cmn.jpg)] bg-cover bg-center bg-no-repeat">
+                        <div class="absolute text-white bottom-6 left-6">
+                            <h1 class="font-bold text-[20px]">Teamwork</h1>
+                            <p>Committed and creative</p>
+                        </div>
+                    </div>
+
+                    <div class="sm:ml-[30px] gap-[30px]">
+                        <div
+                            class="grayscale hover:grayscale-0 relative sm:w-[400px] w-[350px] h-[284px] bg-[url(./img/philisopy.jpg)] bg-center bg-cover bg-center sm:mt-0 mt-[30px]">
+                            <div class="absolute text-white bottom-6 left-6 ">
+                                <h1 class="font-bold text-[20px]">Philosophy</h1>
+                                <p>Trust pays off</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="grayscale hover:grayscale-0 relative sm:w-[400px] w-[350px] h-[284px] bg-[url(./img/office.jpg)] bg-center bg-cover bg-center mt-[30px]">
+                            <div class="absolute text-white bottom-6 left-6 ">
+                                <h1 class="font-bold text-[20px]">Office</h1>
+                                <p>Berlin, UK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex gap-[73px] sm:flex-row flex-col sm:mt-0 mt-20 sm:mb-0 mb-10">
+                    <div>
+                        <h1 class="mb-[41px] font-bold text-[22px]">Who we are</h1>
+                        <p>Bring to the table win-win survival strategies <br>
+                            to ensure proactive domination. At the end of <br>
+                            the day, going forward will have multiple <br>
+                            touchpoints for offshoring.</p>
+                    </div>
+
+                    <div>
+                        <h1 class="mb-[41px] font-bold text-[22px]">Our philosophy</h1>
+                        <p>A new normal that has evolved from <br>
+                            generation X is on the runway heading <br>
+                            towards a streamlined cloud solution. User <br>
+                            generated content in real-time.</p>
+                    </div>
+
+                    <div>
+                        <h1 class="mb-[41px] font-bold text-[22px]">How we work</h1>
+                        <p>Capitalize on low hanging fruit to identify a <br>
+                            ballpark value added activity to beta test. <br>
+                            Override the digital divide with additional <br>
+                            clickthroughs from DevOps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col justify-center sm:items-center">
+                <div class="w-full flex justify-center items-center">
+                    <span class="w-[1px] h-[60px] bg-[#E9204F] mb-[110px]"></span>
+                </div>
+
+                <div class=" flex sm:flex-row flex-col justify-center sm:items-center mb-[50px] sm:px-0 px-[15px]">
+                    <div class=" relative flex w-[350px] h-[350px] sm:w-[462px] sm:h-[621px] sm:mr-[70px]">
+
+                        <div
+                            class="absolute  inset-0 bg-[url(./img/lookmobile.jpg)] bg-cover bg-center bg-no-repeat z-10">
+                        </div>
+
+                        <div class="hidden sm:inline absolute size-[100px] bg-[#E9204F] -bottom-6 -right-6 z-0"></div>
+
+                    </div>
+
+                    <div class="flex flex-col">
+                        <span class="w-[60px] h-[1px] bg-[#E9204F] sm:mt-0 mt-10 mb-[42px]"></span>
+                        <h1 class="mb-[25px] font-bold text-[30px] sm:text-[50px]">What Clients Say.</h1>
+                        <p class="text-[#E9204F] font-bold mb-[60px]">WE'RE MORE THAN A DIGITAL AGENCY</p>
+
+                        <p class="sm:text-[22px] text-[18px]">We are motivated by the satisfaction of our clients. Put your <br>
+                            trust in us and share in our growth Asset Management is made <br>
+                            up of a team of expert, committed and experienced people with <br>
+                            a passion for financial markets. Our goal is to achieve <br>
+                            continuous and sustainable growth of our clients.</p>
+
+                        <span class="w-[60px] h-[1px] bg-[#E9204F] mb-[42px] mt-[65px]"></span>
+                        <p class=" font-bold mb-[60px]">ARON SMITH, UX DESIGNER</p>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="img/marka.png" alt="">
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col justify-center sm:items-center">
+                <div class="w-full flex justify-center flex-col items-center">
+                    <span class="w-[1px] h-[60px] bg-[#E9204F] mt-[110px] mb-[110px]"></span>
+                    <div>
+                    <h1 class="mb-[25px] font-bold text-[50px]">Latest News.</h1>
+                    <p class="text-[#E9204F] font-bold mb-[60px]">CHECK OUT SOME OF OUR THINKING</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-[20px] overflow-x-auto">
+                    <div>
+                        <div class="sm:size-[475px] size-[392px] overflow-hidden">
+                            <div
+                                class="group relative size-full bg-[url(./img/girl.png)] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500 ease-in-out">
+
+
+                                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center 
+                                transform transition-all duration-500 ease-in-out
+                                    group-hover:-translate-y-4 w-full max-w-[300px] text-center">
+
+
+                                    <h3 class="text-white font-medium text-lg mb-1">Careers</h3>
+
+
+                                    <h4 class="text-white font-bold text-lg">Winning tactics for a new digital agency
+                                    </h4>
+
+
+                                    <img class="mt-2 opacity-0 group-hover:opacity-200 transition-opacity duration-500 ease-in-out mx-auto group-hover:brightness-[5]"
+                                        src="img/assents/icons/Icon.svg" alt="icon">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <div class="sm:size-[475px] size-[392px] overflow-hidden">
+                            <div
+                                class="group relative size-full bg-[url(./img/Man.png)] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500 ease-in-out">
+
+
+                                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center 
+             transform transition-all duration-500 ease-in-out
+             group-hover:-translate-y-4 w-full max-w-[300px] text-center">
+
+
+                                    <h3 class="text-white font-medium text-lg mb-1">Careers</h3>
+
+
+                                    <h4 class="text-white font-bold text-lg">How to drive your customer experience
+                                    </h4>
+
+
+                                    <img class="mt-2 opacity-0 group-hover:opacity-200 transition-opacity duration-500 ease-in-out mx-auto group-hover:brightness-[5]"
+                                        src="img/assents/icons/Icon.svg" alt="icon">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sm:size-[475px] size-[392px] overflow-hidden">
+                            <div
+                                class="group relative size-full bg-[url(./img/Desktop.png)] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-500 ease-in-out">
+
+
+                                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center 
+             transform transition-all duration-500 ease-in-out
+             group-hover:-translate-y-4 w-full max-w-[300px] text-center">
+
+
+                                    <h3 class="text-white font-medium text-lg mb-1">Careers</h3>
+
+
+                                    <h4 class="text-white font-bold text-lg">How to be more productive usgin sticky
+                                        notes
+                                    </h4>
+
+
+                                    <img class="mt-2 opacity-0 group-hover:opacity-200 transition-opacity duration-500 ease-in-out mx-auto group-hover:brightness-[5]"
+                                        src="img/assents/icons/Icon.svg" alt="icon">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="flex gap-[16px] mt-[44px] mb-[63px] justify-center">
+                    <div class="size-[14px] bg-[#E9204F] rounded-full">
+                    </div>
+                    <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                    <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                    <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                    <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                    <div class="size-[14px] rounded-full border border-zinc-300"></div>
+                </div>
+            </div>
+
+            <footer class="w-full flex flex-col justify-center items-center">
+                <div class="w-full flex items-center justify-evenly sm:h-[340px] bg-[#1B1B1B] sm:flex-row flex-col sm:py-0 py-[70px]">
+                    <div class="flex gap-[8px]">
+                        <img class="hover:text-[#E9204F] transition-all duration-500 ease-in-out hover:-translate-y-3 " src="img/Link.png" alt="">
+                        <img class="transition-all duration-500 ease-in-out hover:-translate-y-3 " src="img/Link-1.png" alt="">
+                        <img class="transition-all duration-500 ease-in-out hover:-translate-y-3 " src="img/Link-2.png" alt="">
+                        <img class="transition-all duration-500 ease-in-out hover:-translate-y-3 " src="img/Link-3.png" alt="">
+                    </div>
+
+                    <h2 class="text-[48px] font-bold text-white my-8 sm:mx-0">Let's Talk?</h2>
+
+                    <button
+                        class="group relative text-white w-[190px] h-[60px] border-[1px] border-[#E9204F] flex justify-center items-center ">
+                        <span
+                            class="absolute left-0 top-0 w-0 h-full bg-[#E9204F] transition-all duration-500 ease-in-out group-hover:w-full"></span>
+                        <h1 class="relative z-10">Make an enquiry!</h1>
+                    </button>
+                </div>
+
+                <div class="w-full sm:h-[137px] bg-[#161616] flex justify-evenly items-center text-white sm:flex-row flex-col sm:text-start text-center sm:py-0 py-[40px]">
+                    <div class="group hover:text-[#E9204F]">
+                        <h1 class="text-[20px] font-bold hover:text-[#E9204F]">Berlin.</h1>
+                        <h2>+21 30 310 0010</h2>
+                    </div>
+                    <div class="group hover:text-[#E9204F]">
+                        <h1 class="text-[20px] font-bold hover:text-[#E9204F]">Melbourne.</h1>
+                        <h2 class="">+21 201 161 0011</h2>
+                    </div>
+                </div>
+
+                <div class="w-full sm:h-[85px] h-[109px] flex sm:justify-evenly justify-center items-center sm:flex-row flex-col text-[13px] text-[#747474] bg-black sm:py-0 ">
+                    <h1>2018 © <span class="text-white">Gentium</span>, All rights reserved.</h1>
+
+                    <div class="flex gap-[20px] text-white">
+                        <a class="relative group hover:text-[#E9204F]"><span
+                            class="absolute -bottom-2 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full group-hover:text-[#E9204F]"></span>Terms of use
+                        </a>
+                        <a class="relative group hover:text-[#E9204F]"><span
+                            class="absolute -bottom-2 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full group-hover:text-[#E9204F]"></span>Privacy Policy</a>
+                        <h1 class="relative group hover:text-[#E9204F]"><span
+                            class="absolute -bottom-2 left-0 bg-[#E9204F] w-0 h-[1px] transition-all duration-500 ease-in-out group-hover:w-full "></span>Cookie Policy</h1>
+                    </div>
+                </div>
+            </footer>
     </section>
 
 
 </body>
+
 </html>
