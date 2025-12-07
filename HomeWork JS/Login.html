@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="Login.js"></script>
+    <title>Log In</title>
+</head>
+<body class="w-full flex justify-center h-screen bg-white ">
+    <section class=" flex items-center max-w-[1440px] width-full flex pt-[133px] pr-[135px] pb-[133px]">
+        <div class="">
+            <img class=" shadow-m w-[605px] h-[581px]" src="img/Side Image.png" alt="">
+        </div>
+
+        <from class="flex justify-center flex-col items-center  ml-[129px] ">
+
+            <div class="w-full">
+                <h1 class="text-[35px] font-medium">Log in to Exclusive</h1>
+                <p class="mt-[24px] text-[16px] font-normal">Enter your details below</p>
+            </div>
+            <div class="w-full flex justify-center flex-col items-center ">
+
+
+                
+                <input id="emailInput" placeholder="Email" class="focus:outline-none focus:ring-0  mt-[48px] text-[16px] mb-[40px] w-full  border-b-[1px] border-gray-400"
+                    type="email">
+                <input id="passwordInput" placeholder="Password" class="focus:outline-none focus:ring-0 text-[16px] mb-[40px] w-full  border-b-[1px] border-gray-400"
+                    type="password">
+
+                <div class="mb-2">
+                    <input id="rememberMe" type="checkbox" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                </div>
+                <button 
+                  id="loginBtn" class="shadow-lg focus:shadow-none rounded-2xl text-[16px] font-normal leading-[24px] text-white  px-[122px] py-[16px] bg-[#DB4444] cursor-pointer">Login</button>
+
+            </div>
+            <div class="flex  justify-start w-full mt-[18px]">
+                <p class="text-black mr-[16px]">Don’t have an account?</p> <a
+                   target="_blank" class="text-black font-medium border-b border-black" href="Register.html">Resgister</a>
+            </div>
+        </from>
+    </section>
+</body>
+</html>
