@@ -2,10 +2,58 @@ import { refreshAccesToken } from "./utils.js"
 
 const vievbtn = document.getElementById('vievbtn')
 const container = document.getElementById('container')
+const darkMode = document.getElementById('darkMode')
+const body = document.getElementById('body')
 
 
 
 //======================================================================
+
+const setButton=()=>{
+    const currencyMode = localStorage.getItem("darkmode")
+
+    if(currencyMode === "light"){
+        darkMode.classList.add("bg-black","text-white","border-white")
+        darkMode.classList.remove("bg-white","text-black","border-black")
+        darkMode.innerText ="Dark Mode"
+    }else{
+        darkMode.classList.remove("bg-black","text-white","border-white")
+        darkMode.classList.add("bg-white","text-black","border-black")
+        darkMode.innerText ="Light Mode"  
+    }
+}
+
+const setBody=()=>{
+    const currentMode = localStorage.getItem("darkmode")
+    if(currentMode ==="light"){
+        body.classList.remove("bg-black")
+        body.classList.add("bg-white")
+
+        body.classList.remove("text-white")
+        body.classList.add("text-black")
+        
+    }else{
+        body.classList.add("bg-black")
+        body.classList.remove("bg-white")
+
+        body.classList.remove("text-black")
+        body.classList.add("text-white")
+    }
+
+    setButton()
+}
+
+setBody()
+
+darkMode.addEventListener('click',()=>{
+
+    const darkmode = localStorage.getItem("darkmode")
+    localStorage.setItem("darkmode", darkmode==="light"?"dark":"light")
+    const currentMode = localStorage.getItem("darkmode")
+    setBody()
+    
+})
+
 
 async function getUserInfo(){
     try {
@@ -17,7 +65,7 @@ async function getUserInfo(){
         })
 
          if(res.status === 401){
-            const refreshed = await refreshAccesToken(getUserInfo)
+            const refreshed =  await refreshAccesToken(getUserInfo)
             if(!refreshed){
                 window.location.href = "http://127.0.0.1:5501/Login.html"
             }

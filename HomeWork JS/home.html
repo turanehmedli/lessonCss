@@ -9,20 +9,22 @@
     <title>Document</title>
 </head>
 
-<body class="w-full h-screen flex justify-center ">
+<body id="body" class="w-full h-screen flex justify-center transition-all duration">
     <section class="max-w-[1440px] w-full">
-        <nav class="border-b-[1px] border-gray-300 flex justify-center">
+        <nav class=" border-b-[1px] border-gray-300 flex justify-center">
             <div class="w-full flex justify-between items-center pt-[60px] px-[135px] pb-[35px] ">
                 <div>
                     <h1 class="font-bold">Exclusive</h1>
                 </div>
 
-                <div class="flex justify-end ">
+                <div class="flex justify-end items-center ml-4">
                     <div class="relative w-[245px] h-10 bg-zinc-200 rounded-sm mr-[24px]">
                         <input class="w-full  h-full pl-5 appearence-none placeholder:text-xs text-xs "
                             placeholder="What are you looking for?" type="search">
                         <img class=" absolute right-2 top-2  size-6" src="items/Component 2.svg" alt="">
                     </div>
+
+                    <button id="darkMode" class="w-[100px] h-[30px] bg-black text-white text-xs flex items-center justify-center mx-2 rounded-2xl">Dark Mode</button>
 
                     <div>
                         <a href="Login.html"><img src="img/Frame 551.png" alt=""></a>
