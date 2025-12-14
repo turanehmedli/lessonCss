@@ -1,8 +1,23 @@
+//login.js
+
+
 const emailInput = document.getElementById('emailInput')
 const passwordInput = document.getElementById('passwordInput')
 const loginBtn = document.getElementById('loginBtn')
 const rememberMe = document.getElementById('rememberMe')
+const passwordTog = document.getElementById('passwordTog')
+const eyeIcon = document.getElementById('eyeIcon')
 
+passwordTog.addEventListener('click',()=>{
+    let isVisible = passwordInput.getAttribute('type')==='text'?true : false
+    if(!isVisible){
+        eyeIcon.setAttribute('src',"items/eye-closed.svg")
+        passwordInput.setAttribute('type','text')
+    }else{
+        eyeIcon.setAttribute('src',"items/eye.svg")
+        passwordInput.setAttribute('type','password')
+    }
+})
 
 let userData = {}
 
@@ -37,14 +52,13 @@ const loginUser = async()=>{
         const data = await res.json()
         console.log(data)
 
-            if(rememberMe.checked){
-                localStorage.setItem("accessToken", data.accessToken) //Local ve session arasindaki ferq Local qalicidi browsu baglayanda silinmir session ise silinir
+            if (rememberMe.checked) {
+                localStorage.setItem("accessToken", data.accessToken)
                 localStorage.setItem("refreshToken", data.refreshToken)
-            }else{
-                sessionStorage.setItem("accessToken", data.accessToken) //Local ve session arasindaki ferq Local qalicidi browsu baglayanda silinmir session ise silinir
+            } else {
+                sessionStorage.setItem("accessToken", data.accessToken)
                 sessionStorage.setItem("refreshToken", data.refreshToken)
             }
-
             
             sessionStorage.setItem("UserLogin", JSON.stringify(true))
 

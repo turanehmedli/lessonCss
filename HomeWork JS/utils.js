@@ -1,3 +1,5 @@
+//utils.js
+
 export const refreshAccesToken = async (callback)=>{
     try {
         const refreshToken = sessionStorage.getItem("refreshToken")
@@ -15,6 +17,8 @@ export const refreshAccesToken = async (callback)=>{
             const data = await res.json()
             sessionStorage.setItem("accessToken",data.accessToken)
             callback()
+        }else{
+            window.location.href = "http://127.0.0.1:5501/Login.html"
         }
     } catch (error) {
         console.error(error)

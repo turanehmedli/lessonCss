@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body id="body" class="w-full h-screen flex justify-center transition-all duration">
+<body id="body" class="w-full h-screen flex justify-center transition-all duration-300">
     <section class="max-w-[1440px] w-full">
         <nav class=" border-b-[1px] border-gray-300 flex justify-center">
             <div class="w-full flex justify-between items-center pt-[60px] px-[135px] pb-[35px] ">
@@ -18,16 +18,23 @@
                 </div>
 
                 <div class="flex justify-end items-center ml-4">
-                    <div class="relative w-[245px] h-10 bg-zinc-200 rounded-sm mr-[24px]">
-                        <input class="w-full  h-full pl-5 appearence-none placeholder:text-xs text-xs "
+                    <div class="relative w-[245px] h-10 bg-zinc-500 rounded-sm mr-[24px]">
+                        <input id="SearchInpt" class="w-full  h-full pl-5 appearence-none placeholder:text-xs text-xs "
                             placeholder="What are you looking for?" type="search">
                         <img class=" absolute right-2 top-2  size-6" src="items/Component 2.svg" alt="">
                     </div>
 
                     <button id="darkMode" class="w-[100px] h-[30px] bg-black text-white text-xs flex items-center justify-center mx-2 rounded-2xl">Dark Mode</button>
 
-                    <div>
-                        <a href="Login.html"><img src="img/Frame 551.png" alt=""></a>
+                    <div class="flex gap-[30px] ml-3">
+
+                        <a href="basket.html"><div class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></div></a>
+
+
+                        <a href="Login.html">
+                            <div class="cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -40,25 +47,10 @@
                     <p class="ml-[16px] text-[#DB4444]">Categories</p>
                 </div>
 
-                <h1 class="font-semibold text-[36px]">Browse By Category</h1>
+                <h2  class="font-semibold text-[36px]">Browse By Category</h2>
             </div>
 
-            <div class="  flex justify-between">
-                <div class="flex justify-center items-center flex-col w-[170px] h-[145px] border-[1px] border-gray-200">
-                    <img src="img/Category-CellPhone.png" alt="">
-                    <h1 class="mt-[16px]">Tech</h1>
-                </div>
-
-                <div class="flex justify-center items-center flex-col w-[170px] h-[145px] border-[1px] border-gray-200">
-                    <img src="img/Category-Computer.png" alt="">
-                    <h1 class="mt-[16px]">Fashion</h1>
-                </div>
-
-                <div class="flex justify-center items-center flex-col w-[170px] h-[145px] border-[1px] border-gray-200">
-                    <img src="img/Category-SmartWatch.png" alt="">
-                    <h1 class="mt-[16px]">Furniture</h1>
-                </div>
-            </div>
+            <div id="categorieCont" class="  flex gap-[30px]"></div>
 
         </div>
         <hr class="border-gray-300 mt-[127px]">
@@ -66,19 +58,17 @@
         <main>
 
             <div class=" mt-[64px] ml-[135px] w-[1170px]  ">
+
                 <div class="">
+
                     <div class="mb-[10px] flex items-center">
                         <img src="img/Rectangle 17.png" alt="">
                         <p class="ml-[16px] text-[#DB4444]">Our Products</p>
                     </div>
 
-                    <h1 class="font-semibold text-[36px]">Explore Our Products</h1>
-                </div>
+                    <h2 id="h2Product" class="font-semibold text-[36px]">Explore Our Products</h2>
 
-                
-               
-                
-                
+                </div>
 
             </div>
 
@@ -102,7 +92,7 @@
                     <div class="flex justify-center items-center">
                         <img src="img/Services (1).png" alt="">
                     </div>
-                    <h1 class="font-semibold text-[20px] mt-[24px] mb-[8px] leading-[28px]">24/7 CUSTOMER SERVICE</h1>
+                    <h2 class="font-semibold text-[20px] mt-[24px] mb-[8px] leading-[28px]">24/7 CUSTOMER SERVICE</h2>
                     <p class="text-[14px]">Friendly 24/7 customer support</p>
                 </div>
 
@@ -110,17 +100,19 @@
                     <div class="flex justify-center items-center">
                         <img src="img/Services (2).png" alt="">
                     </div>
-                    <h1 class="font-semibold text-[20px] mt-[24px] mb-[8px] leading-[28px]">MONEY BACK GUARANTEE</h1>
+                    <h2 class="font-semibold text-[20px] mt-[24px] mb-[8px] leading-[28px]">MONEY BACK GUARANTEE</h2>
                     <p class="text-[14px]">We reurn money within 30 days</p>
                 </div>
 
             </div>
+
+            <button id="UpBtn" class="fixed right-64 bottom-10 size-[50px] bg-white rounded-full shadow-md shadow-zinc-600 text-black  ">UP</button>
         </main>
 
         <footer class="bg-black ">
             <div class="w-full pt-[80px] pl-[135px] mt-[140px] h-[440px] bg-black flex gap-[87px]">
                 <div class=" ">
-                    <h1 class=" mb-[24px] font-bold text-white leading-[24px] text-[24px]">Exclusive</h1>
+                    <h2 class=" mb-[24px] font-bold text-white leading-[24px] text-[24px]">Exclusive</h2>
                     <h2 class="mb-[24px] font-medium leading-[28px] text-[20px] text-white">Subscribe</h2>
                     <h3 class="mb-[16px] text-white text-[16px] leading-[24px]">Get 10% off your first order</h3>
                     <div class="relative w-[245px] h-10 bg-zinc-200 rounded-sm mr-[24px]">
@@ -136,28 +128,28 @@
                 </div>
 
                 <div>
-                    <h1 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Support</h1>
+                    <h2 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Support</h2>
                     <h2 class=" text-white leading-[24px]">111 Bijoy sarani, Dhaka,<br> DH 1515, Bangladesh.</h2>
                     <h3 class="my-[16px] text-white leading-[24px]">exclusive@gmail.com</h3>
                     <h4 class="text-white leading-[24px]">+88015-88888-9999</h4>
                 </div>
 
                 <div>
-                    <h1 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Account</h1>
+                    <h2 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Account</h2>
                     <h2 class=" text-white leading-[24px]">My Account</h2>
                     <h3 class="my-[16px] text-white leading-[24px]">Login / Register</h3>
                     <h4 class="text-white leading-[24px]">Basket</h4>
                 </div>
 
                 <div>
-                    <h1 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Account</h1>
-                    <h2 class=" text-white leading-[24px]">Quick Link</h2>
+                    <h2 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Quick Link</h2>
+                    
                     <h3 class="my-[16px] text-white leading-[24px]">Privacy Policy</h3>
                     <h4 class="text-white leading-[24px]">Terms Of Use</h4>
                 </div>
 
                 <div>
-                    <h1 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Download App</h1>
+                    <h2 class="mb-[21px] font-medium text-white text-[20px] leading-[28px]">Download App</h2>
                     <p class="mb-[8px] text-[#FAFAFA] text-[12px] leading-[18px]">Save $3 with App New User Only</p>
 
                     <img src="img/Frame 719.png" alt="">
