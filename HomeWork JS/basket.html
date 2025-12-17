@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <script type="module" src="basket.js"></script>
     <title>Basket</title>
 </head>
 
@@ -40,124 +40,17 @@
         </nav>
 
         <div class="mt-[73px] mb-[60px] w-full flex justify-between pl-[80px] pr-[45px]">
-            <h1 class="text-[20px] leading-[26px] py-[15px]">Basket (8)</h1>
-            <button class="border-[1px] border-gray-100 py-[16px] px-[83px]">Clear all</button>
+            <h1 class="text-[20px] leading-[26px] py-[15px]">Basket </h1>
+            <button id="clearAll" class="border-[1px] border-gray-100 py-[16px] px-[83px]">Clear all</button>
         </div>
 
-        <div class="grid grid-cols-4 gap-[30px] ml-[80px]">
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[172px] h-[152px]" src="png/bag.png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">Gucci duffle bag (3)</h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$960</p>
-            </div>
+        <div id="CuontainerBasketItems" class="grid grid-cols-4 gap-[30px] ml-[80px]">
             
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[191px] h-[95px]" src="png/gammaxx-l240-argb-1-500x500 1 (1).png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">RGB liquid CPU Cooler</h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$1960</p>
-            </div>
-
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[172px] h-[152px]" src="png/GP11_PRD3 1@2x.png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">GP11 Shooter USB Gamepad</h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$550</p>
-            </div>
-
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[172px] h-[152px]" src="png/jacket.png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">Quilted Satin Jacket</h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$750</p>
-            </div>
-            
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[172px] h-[152px]" src="png/bag.png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">Gucci duffle bag </h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$960</p>
-            </div>
-            
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[191px] h-[95px]" src="png/gammaxx-l240-argb-1-500x500 1 (1).png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">RGB liquid CPU Cooler</h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$1960</p>
-            </div>
-
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[172px] h-[152px]" src="png/GP11_PRD3 1@2x.png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">GP11 Shooter USB Gamepad</h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$550</p>
-            </div>
-
-            <div class=" ">
-                <div
-                    class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                    <button
-                        class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                        To Basket</button>
-                    <img class="relative w-[172px] h-[152px]" src="png/jacket.png" alt="">
-                    <img class="absolute right-4 top-4" src="img2/Fill Eye.png" alt="">
-                </div>
-
-                <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">Quilted Satin Jacket</h1>
-                <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$750</p>
-            </div>
             
 
+        </div>
+        <div class="w-full flex items-center justify-end ">
+            <h3  class="mr-1 font-semibold text-xl">Total Price: <h2 class="font-semibold text-xl mr-10" id="totalPriceLe"></h2></h3>
         </div>
         
          <footer class="bg-black mt-[179px] ">

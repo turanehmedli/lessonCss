@@ -2,7 +2,8 @@
 
 export const refreshAccesToken = async (callback)=>{
     try {
-        const refreshToken = sessionStorage.getItem("refreshToken")
+        const refreshToken = sessionStorage.getItem("refreshToken") || localStorage.getItem('refreshToken')
+        
         const res = await fetch("https://ilkinibadov.com/api/v1/auth/refresh",{
             method:"POST",
             headers:{
@@ -15,7 +16,8 @@ export const refreshAccesToken = async (callback)=>{
 
         if(res.ok){
             const data = await res.json()
-            sessionStorage.setItem("accessToken",data.accessToken)
+            localStorage.setItem("accessToken", data.accessToken)
+            sessionStorage.setItem("accessToken", data.accessToken)
             callback()
         }else{
             window.location.href = "http://127.0.0.1:5501/Login.html"

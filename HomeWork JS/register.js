@@ -3,13 +3,15 @@
 
 const emailInput = document.getElementById('emailInput')
 const passwordInput = document.getElementById('passwordInput')
-const loginBtn = document.getElementById('loginBtn')
-const rememberMe = document.getElementById('rememberMe')
+const firstName = document.getElementById('firstName')
+const lastName = document.getElementById('lastName')
+const registerBtn = document.getElementById('registerBtn')
+
 const passwordTog = document.getElementById('passwordTog')
 const eyeIcon = document.getElementById('eyeIcon')
 
 passwordTog.addEventListener('click',()=>{
-    let isVisible = passwordInput.getAttribute('type')==='text'?true : false
+    let isVisible = passwordInput.getAttribute('type')==='text' ? true : false
     if(!isVisible){
         eyeIcon.setAttribute('src',"items/eye-closed.svg")
         passwordInput.setAttribute('type','text')
@@ -26,7 +28,7 @@ emailInput.addEventListener("input", (e) => {
         ...userData,
         email: e.target.value
     }
-     
+    
 })
 
 passwordInput.addEventListener("input",(e)=>{
@@ -34,12 +36,38 @@ passwordInput.addEventListener("input",(e)=>{
         ...userData,
         password: e.target.value
     }
-    
+   
 })
 
-const loginUser = async()=>{
+firstName.addEventListener("input", (e) => {
+    userData = {
+        ...userData,
+        firstName: e.target.value
+    }
+     
+})
+
+lastName.addEventListener("input", (e) => {
+    userData = {
+        ...userData,
+        lastName: e.target.value
+    }
+     
+})
+
+
+const registerUser = async(e)=>{
+    e.preventDefault()
+
+    const userData = {
+        email: emailInput.value.trim(),
+        password: passwordInput.value.trim(),
+        firstname: firstName.value.trim(),
+        lastname: lastName.value.trim()   
+    }
+
     try{
-        const res = await fetch("https://ilkinibadov.com/api/v1/auth/login",{
+        const res = await fetch("https://ilkinibadov.com/api/v1/auth/signup",{
             method: 'POST',
             body: JSON.stringify(userData),
             headers:{
@@ -52,29 +80,16 @@ const loginUser = async()=>{
         const data = await res.json()
         console.log(data)
 
-            localStorage.clear()
-            sessionStorage.clear()
-
-            if (rememberMe.checked) {
-                localStorage.setItem("accessToken", data.accessToken)
-                localStorage.setItem("refreshToken", data.refreshToken)
-            } else {
-                sessionStorage.setItem("accessToken", data.accessToken)
-                sessionStorage.setItem("refreshToken", data.refreshToken)
-            }
+           
+        localStorage.setItem("accessToken", data.accessToken)
+        localStorage.setItem("refreshToken", data.refreshToken)
+        sessionStorage.setItem("accessToken", data.accessToken)
+        sessionStorage.setItem("refreshToken", data.refreshToken)
+          
             
-            sessionStorage.setItem("UserLogin", JSON.stringify(true))
-
-            const userLoggIn = JSON.parse(sessionStorage.getItem("UserLogin"))
-            console.log(
-                sessionStorage.getItem("accessToken"),
-                sessionStorage.getItem("refreshToken"),
-                typeof userLoggIn
-            )
+           
          
         window.open("http://127.0.0.1:5501/home.html","_blank")
-        }else{
-            alert("Email or Password is incorrect")
         }
         
     }catch(error){
@@ -84,5 +99,5 @@ const loginUser = async()=>{
 
 
 
-loginBtn.addEventListener('click',loginUser)
+registerBtn.addEventListener('click',registerUser)
 

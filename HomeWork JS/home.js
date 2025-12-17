@@ -217,6 +217,8 @@ const renderItem =(products)=>{
         const h3 = document.createElement('h3')
         const p = document.createElement('p')
         const span = document.createElement('span')
+        const a =document.createElement('a')
+
         img.src = product.image || product.images?.[0]
         h3.innerText = product.title
         p.innerText = product.description 
@@ -227,12 +229,15 @@ const renderItem =(products)=>{
         div.append(h3)
         div.append(p)
         div.append(span)
-        container.append(div)
+        a.append(div)
+        container.append(a)
         img.classList.add('size-[200px]','object-contain')
         h3.classList.add('font-bold','text-md')
         p.classList.add('text-xs','my-2')
         span.classList.add('text-red-500')
-        div.classList.add('border','border-zinc-300','p-3','rounded-md')
+        div.classList.add('w-full','h-full','border','border-zinc-300','p-3','rounded-md')
+        a.classList.add('w-full','h-full')
+        a.setAttribute('href',`http://127.0.0.1:5501/shopping.html?id=${product._id || product.id}`)
         })
     
     }

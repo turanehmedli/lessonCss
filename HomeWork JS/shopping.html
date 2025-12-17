@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script  defer src="shopping.js"></script>
     <title>Shopping</title>
 </head>
 
@@ -33,53 +34,49 @@
         </nav>
 
         <div class="w-full flex justify-center mt-[100px] gap-[30px]">
-            <div>
-                <div class="w-[170px] h-[138px] mb-[16px]"><img class="w-[170px] h-[138px]" src="img2/Frame 895.png"
-                        alt=""></div>
-
-                <div class="w-[170px] h-[138px] mb-[16px]"><img class="w-[170px] h-[138px]" src="img2/Frame 896.png"
-                        alt=""></div>
-
-                <div class="w-[170px] h-[138px] mb-[16px]"><img class="w-[170px] h-[138px]" src="img2/Frame 897.png"
-                        alt=""></div>
-
-                <div class="w-[170px] h-[138px] mb-[16px]"><img class="w-[170px] h-[138px]" src="img2/Frame 919.png"
-                        alt=""></div>
+            <div id="images" class="flex flex-col gap-10">
+                
 
             </div>
 
-            <div class="w-[500px] h-[600px]">
-                <img class="w-[500px] h-[600px]" src="img2/Frame 894.png" alt="">
-            </div>
+            <img id="bigImage" class="size-[500px] object-contain border border-zinc-300" src="https://www.shutterstock.com/image-vector/missing-picture-page-website-design-600nw-1552421075.jpg" alt="">
 
             <div class="ml-[40px]">
-                <h1 class="font-semibold text-[24px] leading-[24px]">Havic HV G-92 Gamepad</h1>
-                <p class="my-[16px] text-gray-200">|<span
-                        class="text-green-200 ml-[3px] text-[14px] leading-[21px] font-regular">In Stock</span></p>
-                <h2 class="text-[24px] leading-[24px] font-regular">$192.00</h2>
-                <p class="text-[14px] font-regular leading-[21px] my-[24px]">PlayStation 5 Controller Skin High quality
-                    vinyl with air <br> channel adhesive for easy bubble free install & mess <br>free removal Pressure
-                    sensitive.</p>
+                <h1 id="title" class="font-semibold text-[24px] leading-[24px]">
+
+                </h1>
+
+                <p id="stock" class="my-[16px] text-gray-200">
+                    <span
+                        class="text-green-200 ml-[3px] text-[14px] leading-[21px] font-regular">
+                    </span>
+                </p>
+                <h2 id="price" class="text-[24px] leading-[24px] font-regular">
+
+                </h2>
+
+                <p id="description" class="text-[14px] font-regular leading-[21px] my-[24px]">
+                </p>
 
                 <hr>
 
                 <div class="mt-[124px] grid grid-cols-2 w-[399px] gap-[10px]">
 
                     <div class="w-[159px] border-black border-[1px]  flex justify-center items-center rounded-sm">
-                        <div
-                            class="flex border-r-[1px] border-black justify-center items-center text-[35px] w-[40px] h-[44px]">
+                        <div id="removePls"
+                            class="flex border-r-[1px] border-black justify-center items-center text-[35px] pb-1 w-[44px] h-[44px] cursor-pointer">
                             -
                         </div>
-                        <div
-                            class="flex justify-center items-center border-r-[1px] border-black w-[80px]  h-[44px] text-[20px]">
-                            2
+                        <div id="count"
+                            class="flex justify-center items-center border-r-[1px] border-black w-[80px]   h-[44px] text-[20px] cursor-pointer">
+                            
                         </div>
-                        <div
-                            class="flex justify-center text-white items-center text-[35px] w-[40px] h-[44px] bg-red-500">
+                        <div id="addPls"
+                            class="flex justify-center text-white items-center text-[35px] w-[44px] h-[44px] pb-2 bg-red-500 cursor-pointer">
                             +</div>
                     </div>
 
-                    <button class="w-[224] h-[44px] bg-red-500 text-white rounded-sm">Add to Basket</button>
+                    <button id="addToBasket" class="w-[224] h-[44px] bg-red-500 text-white rounded-sm">Add to Basket</button>
 
                     <div class="border-gray-300 border-[1px] w-[399px] h-[180px] mt-[40px]  rounded-sm">
 
@@ -121,64 +118,10 @@
         <div class="mt-[179px]">
             <div class="mb-[10px] flex items-center ">
                 <img src="img/Rectangle 17.png" alt="">
-                <p class="ml-[16px] text-[#DB4444]">Categories</p>
+                <p class="ml-[16px] text-[#DB4444]">Related items</p>
             </div>
 
-            <div class="flex justify-center items-center gap-[30px]">
-                <div class=" ">
-                    <div
-                        class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                        <button
-                            class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                            To Basket</button>
-                        <img class="w-[172px] h-[152px]" src="img2/g92-2-500x500 1.png" alt="">
-                    </div>
-
-                    <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">HAVIT HV-G92 Gamepad</h1>
-                    <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$120</p>
-                </div>
-
-                <div class=" ">
-                    <div
-                        class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                        <button
-                            class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                            To Basket</button>
-                        <img class="w-[191px] h-[101px]" src="img2/ak-900-01-500x500 1.png" alt="">
-                    </div>
-
-                    <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">AK-900 Wired Keyboard/h1>
-                    <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$960</p>
-                </div>
-
-                <div class=" ">
-                    <div
-                        class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                        <button
-                            class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                            To Basket</button>
-                        <img class="w-[172px] h-[152px]" src="img2/g27cq4-500x500 1.png" alt="">
-                    </div>
-
-                    <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">IPS LCD Gaming Monitor</h1>
-                    <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$370</p>
-                </div>
-
-               
-                <div class=" ">
-                    <div
-                        class="w-[270px] h-[250px] bg-zinc-200 flex justify-center items-center relative  object-scale-down group rounded-sm">
-                        <button
-                            class="opacity-0 transition-all delay-300 duration-300 ease-in-out group-hover:opacity-100 absolute bottom-0 w-[270px] bg-black text-white text-center py-2 text-semibold">Add
-                            To Basket</button>
-                        <img class="w-[191px] h-[95px]" src="img2/gammaxx-l240-argb-1-500x500 1.png" alt="">
-                    </div>
-
-                     <h1 class="mb-[8px] mt-[16px] font-medium text-[16px]  leading-[24px]">RGB liquid CPU Cooler</h1>
-                    <p class="font-medium text-[16px]  leading-[24px]  text-[#DB4444]">$160</p>
-                </div>
-
-            </div>
+            <div id="RelatedItems" class="flex p-3 items-center gap-[30px]"></div>
         </div>
 
         <footer class="bg-black mt-[179px] ">
