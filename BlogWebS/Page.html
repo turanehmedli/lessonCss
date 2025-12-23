@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="page.js"></script>
+    <title>Page</title>
+</head>
+
+<body class="w-full h-screen bg-white flex flex-col items-center">
+    <section class="max-w-[1440px] w-full h-fit flex flex-col items-center justify-center">
+        <nav class="py-[32px] flex justify-center gap-[40px] items-center ">
+            <div class="flex gap-[10px] items-center">
+                <img src="/img/Union.png" alt="">
+                <img src="/img/Meta.png" alt="">
+                <img class="mt-[6px]" src="/img/Blog.png" alt="">
+            </div>
+            <div class="flex ml-[118px] gap-[40px]">
+                <a class="hover:border-b-[1px] border-gray-200" target="_blank" href="Homepage.html">Home</a>
+                <a class="hover:border-b-[1px] border-gray-200" target="_blank" href="writeBlog.html">Write a Blog</a>
+                <a class="hover:border-b-[1px] border-gray-200" href="myblogs.html">My Blogs </a>
+                <a class="hover:border-b-[1px] border-gray-200" target="_blank" href="#">Contact</a>
+            </div>
+
+            <div class="flex justify-end ">
+                <div class="relative w-[245px] h-10 bg-zinc-200 rounded-sm mr-[24px]">
+                    <input class="w-full  h-full p-5 appearence-none placeholder:text-xs text-xs " placeholder="search"
+                        type="search">
+                    <img class=" absolute right-2 top-2  size-6" src="/img/items/Component 2.svg" alt="">
+                </div>
+
+               
+            </div>
+
+            <div class="w-[48px] h-[28px] rounded-full bg-gray-200 p-[2px]">
+                <div class="w-[24px] h-[24px] rounded-full bg-white flex justify-center items-center">
+                    <img src="img/items/Vector (3).png" alt="">
+                </div>
+            </div>
+
+           <a href="login.html"> <button class="bg-black w-[68px] h-[36px] rounded-sm text-white text-[14px]">Sign In</button></a>
+        </nav>
+
+        <div class="w-full h-[124px] bg-[#F6F6F7] text-[20px] text-[#181A2A] flex flex items-center justify-center font-medium">
+            <h2 class="font-bold text-[30px]" id="userNameE"></h2>
+        </div>
+        <div class="w-full mt-[48px] mb-[41px]">
+            <h3 class="text-[#181A2A] text-[24px] font-bold">Latest Post</h3>
+        </div>
+
+        <div id="blogUserContact" class="grid grid-cols-3 gap-[20px]">
+
+        </div>
+
+        <div class="w-full flex justify-center">
+            <button class="w-[123px] h-[48px] border-gray-200 border-[1px] mt-[32px]">Load More</button>
+        </div>
+
+
+    </section>
+
+    <footer class="w-full">
+        <div class="mt-[80px] pt-[64px] w-full h-[482px] bg-[#F6F6F7] flex justify-center ">
+            <div class="w-[1440px] flex ">
+                <div class="w-[280px] h-[120px] mr-[684px]">
+                    <h1 class=" pb-[12px] font-semibold text-[18px]">About</h1>
+
+                    <p class="pb-[24px] text-[#696A75]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+
+                    <div class="flex gap-2">
+                        <h3 class="font-semibold ">Email : </h3><a href="#"> info@jstemplate.net</a>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <h3 class="font-semibold ">Phone : </h3><a href="#"> 880 123 456 789</a>
+                    </div>
+
+                </div>
+
+                <div class="mr-[80px]">
+                    <h1 class="mb-[24px] font-semibold text-[18px]">Quick Link</h1>
+                    <p class=" text-[#696A75]">Home</p>
+                    <p class="my-[8px] text-[#696A75]">Write a Blog</p>
+                    <p class="text-[#696A75]">My Blogs</p>
+                    <p class="mt-[8px] text-[#696A75]">Contact</p>
+                </div>
+
+                <div>
+                    <h1 class="mb-[24px] font-semibold text-[18px]">Category</h1>
+                    <p class=" text-[#696A75]">Lifestyle</p>
+                    <p class="my-[8px] text-[#696A75]">Technology</p>
+                    <p class="text-[#696A75]">Travel</p>
+                    <p class="mt-[8px] text-[#696A75]">Business</p>
+                    <p class="mt-[8px] text-[#696A75]">Economy</p>
+                    <p class="mt-[8px] text-[#696A75]">Sports</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="w-full bg-gray-100 h-[100px] border-gray-100 border-[1px]">
+            <div class="flex justify-center bg-gray-100 ">
+                <div
+                    class="w-[1440px] flex justify-between border-t-[1px] border-gray-200 pt-[32px] pb-[58px] bg-gray-100">
+
+                    <div><img src="img/items/Copyright Info.png" alt="">
+                    </div>
+
+                    <div class="flex pt-[32px] pb-[58px] ">
+                        <p class="text-[#3B3C4A]">Terms of Use</p>
+                        <p class="px-[32px] text-[#3B3C4A]">Privacy Policy</p>
+                        <p class="text-[#3B3C4A]">Cookie Policy</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
